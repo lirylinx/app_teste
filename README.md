@@ -1,6 +1,6 @@
 # app_teste
 
-Laboratorio de Desenvolvimento Flutter.
+Lições de  Desenvolvimento Flutter e Dart.
 
 ## Getting Started
 
