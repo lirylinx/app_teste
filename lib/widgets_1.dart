@@ -145,3 +145,57 @@ class _CounterState extends State<Counter> {
     );
   }
 }
+
+class CounterDisplay extends StatelessWidget {
+  const CounterDisplay({this.count});
+
+  final int count; 
+
+  @override
+  Widget build(BuildContext context) {
+    return Text('Count: $count');
+  }
+}
+
+class CounterIncrementor extends StatelessWidget {
+   CounterIncrementor({this.onPressed});
+
+  final VoidCallback  onPressed;
+
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: onPressed,
+      child: Text('incrementar')
+    );
+  }
+}
+
+
+
+// Widget com estado 
+class Counter2 extends StatefulWidget {
+  @override
+  _CounterState2 createState() => _CounterState2();
+}
+
+class _CounterState2 extends State<Counter2> {
+
+  int _counter = 0;
+
+  void _increment() {
+    setState(() {
+      _counter++;
+    });
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Row (
+      children:<Widget>[
+        CounterIncrementor(onPressed: _increment),
+        CounterDisplay(count: _counter)
+      ]
+    );
+  }
+}

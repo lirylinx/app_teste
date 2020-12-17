@@ -1,9 +1,13 @@
 
+import 'package:app_teste/shopping.dart';
 import 'package:app_teste/widgets_1.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-void main() => runApp(MyApp());
+
+
+
+void main() => shopping_main();
 
 class MyApp extends StatelessWidget {
   @override
@@ -12,7 +16,7 @@ class MyApp extends StatelessWidget {
       return MaterialApp(
         title: 'app',
         home: SafeArea(
-          child: TutorialHome(),
+          child: Counter(),
         ),
       );
     // return MaterialApp(
