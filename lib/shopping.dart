@@ -95,7 +95,7 @@ class _ShoppingListaState extends State<ShoppingLista> {
 }
 
 
-void shopping_main() {
+void shoppingMain() {
   runApp(
     MaterialApp(
       title: 'Shopping App',
