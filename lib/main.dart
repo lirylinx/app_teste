@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'layout/exemplo.dart';
 import 'layout/exemplo1.dart';
 
 
@@ -12,15 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
 
-      return MaterialApp(
-        title: 'app',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text(' Flutter layout Demo'),
-          ),
-          body: layoutDemo
-          )
-        );
+      return LayoutMyApp();
   
   }
 }
